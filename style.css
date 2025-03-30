@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root {
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: #2c3e50;
+    display: flex;
+    text-align: center;
+    line-height: 1.6;
+}
+
+img {
+    width: 50%;
+    height: 90%;
+    border-radius: 50%;
+    margin: 2%;
+    min-width: 50%;
+    border: 5px solid #3700fc96;
+}
+
+.container {
+    display: inline;
+    max-width: 80%;
+    margin: 10px auto;
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.795);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.image-container {
+    width: 50%;
+}
+
+.gr{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.content > h1 {
+    color: #3700fc96;
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin: 0 0 40px 0;
+    font-weight: bold;
+}
+
+.content > h2 {
+    color: #ff4d6d;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
+
+li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+li h2{
+    text-decoration: underline;
+}
+
+button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 0 20px 0 20px;
+    
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    max-width: 250px; 
+}
+
+button:hover {
+    background: #e63946;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .gr{
+        display: inline;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    .content > h1 {
+        color: #3700fc96;
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 0 0 40px 0;
+        font-weight: bold;
+    }
+
+    li {
+        list-style: none;
+        font-size: 1rem;
+    }
+
+    li h2{
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    
+
+
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

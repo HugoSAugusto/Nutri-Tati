@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nutritatipacheco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gr">
+            <div class="image-container">
+                <img src="https://mmkt.my.canva.site/nutritatipacheco/images/3664e4b621255f57c20c28a90f05b43c.jpg" alt="Vida Saudável" class="image">
+            </div>
+            <div class="content">
+                <h2>Nutricionista</h2>
+                <h1>Tatiane Pacheco</h1>
+                <ul>
+                    <li><h2>Personalização: </h2>Cada plano é feito para sua rotina e necessidades.</li>
+                    <li><h2>Sem sofrimento:</h2> Adeus efeito sanfona e restrições exageradas.</li>
+                    <li><h2> Resultados sustentáveis:</h2> Aprenda a se alimentar bem e manter o peso ideal.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="WhatsApp()">Comece Hoje</button>
+            <button onclick="Instagram()">Conheça-me Mais</button>
+        </div>
+    </div>
+   
+    <script>
+        function WhatsApp() {
+            var numeroWhatsApp = "+55" + "21986243479"; // Substitua pelo seu número de WhatsApp
+            var urlWhatsApp = `https://wa.me/${numeroWhatsApp}`; // Link para o WhatsApp sem mensagem predefinida
+            window.open(urlWhatsApp, "_blank");
+        }
+
+        function Instagram () {
+            var urlInstagram = `https://www.instagram.com/nutritatipacheco/`; // Link para o perfil do Instagram
+            window.open(urlInstagram, "_blank"); // Redireciona para o perfil do Instagram
+        } 
+    </script>
+</body>
+</html>
